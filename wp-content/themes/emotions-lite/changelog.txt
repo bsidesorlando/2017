@@ -1,0 +1,76 @@
+-------------------------------------------------------
+    CHANGELOG
+-------------------------------------------------------
+
+Keep a change log to describe all the changes made to program source files. The purpose of this is so that people investigating 
+bugs in the future will know about the changes that might have introduced the bug. Often a new bug can be found by looking at 
+what was recently changed. More importantly, change logs can help you eliminate conceptual inconsistencies between different 
+parts of a program, by giving you a history of how the conflicting concepts arose and who they came from.
+
+-------------------------------------------------------
+    CHANGELOG Version Numbers
+-------------------------------------------------------
+
+[major].[minor].[patch]
+
+These 3 levels are defined as:
+
+1. An increment in the major version indicates a break in backward compatibility.
+2. An increment in the minor version indicates the addition of new features or a significant change to existing features.
+3. An increment in the patch version indicates that minor features have been changed or bugs have been fixed.
+
+-------------------------------------------------------
+    Changes Made to this Theme
+-------------------------------------------------------
+
+November 6, 2016 - 1.0.5
+--------------------------------------
+- Fixed an image ALT get title issue
+- Added buttons to make it easier to link up to setup tutorials, reviews, and theme support
+- Updated the .pot language file
+
+
+October 30, 2016 - 1.0.4
+--------------------------------------
+- Fixed a boxed class setting in the header.php file
+- Added a fallback for blog style layout in the index.php file
+- Updated the alt tags on featured images to use non-html titles.
+- Modified the_content() code for blog summaries
+- Modified the excerpt code for blog style 3
+- Updated the language emotions-lite.pot file
+
+
+October 20, 2016 - 1.0.3
+--------------------------------------
+- Added support for refresh widgets
+- Changed the upsell set of buttons in the customizer to comply with the wordpress.org review requirements to just 1 buttons
+- Changed the logo upload setting to now use the built-in WordPress method
+- Changed the prefix name to a search widget function name for WooCommerce
+- Changed post titles to show post ID when no title is available
+- Changed the customizer number based settings to a clickable number field
+- Changed the customizer colour setting sanitize to the core method for HEX colours
+- Updated the customer removal of the background colour to now move it to the Background tab in the customizer
+- Modified the copyright date string in the footer
+- Removed bbPress customizer setting (only available for the pro)
+- Removed a rangeslider from the customizer - not needed
+- Removed WooCommerce support (only for the pro)
+- Removed the sample banner and captions
+- Modified the archive template which contained code for the pro version
+- Updated the theme screenshot
+- Updated the language .pot file
+
+
+May 20, 2016 - 1.0.2
+--------------------------------------
+- Removed the sidebar.php file (not needed)
+- Removed depreciated tags and added new ones
+
+
+May 20, 2016 - 1.0.1
+--------------------------------------
+- Fixed an incorrect link in the customizer theme setup buttons
+
+
+May 20, 2016 - 1.0.0
+--------------------------------------
+- Theme Released

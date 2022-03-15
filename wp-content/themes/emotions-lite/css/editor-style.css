@@ -1,0 +1,605 @@
+/* CSS Editor Document */
+body {
+	max-width: 1150px;
+	margin: 10px 20px;  
+	padding: 0;
+	font-family: Candara, Arial, Helvetica, sans-serif;
+	font-size: 0.875rem; /* Content 14px */ 
+	font-weight: normal;
+    line-height: 1.5;
+	background-color: #fff;
+	color: #505050;
+}
+
+/*-----------------------------------------
+Typography
+-----------------------------------------*/  
+p {
+	margin: 20px 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0 0 10px;
+	font-family: Merriweather, "Times New Roman", serif;
+	font-weight: 400;
+	font-style: italic;
+	line-height: 1.2;
+}
+h1 {
+	font-size: 210%;
+}
+h2 {
+	font-size: 180%;
+}
+h3 {
+	font-size: 160%;
+}
+h4 {
+	font-size: 150%;
+}
+h5 {
+	font-size: 140%;
+}
+h6 {
+	font-size: 130%;
+}
+.widget-title {
+    font-size: 150%;
+    font-family: candara,sans-serif;
+    font-style: normal;
+	color: #e5ecec;
+}
+.display-4,
+.display-3,
+.display-2,
+.display-1 {
+	line-height: 1;
+}
+.display-1 {
+	font-size: 3rem;
+}
+.display-2 {
+	font-size: 2.5rem;
+}
+.display-3 {
+	font-size: 2rem;
+}
+.display-4 {
+	font-size: 1.5rem;
+}
+.display-5 {
+	font-size: 1.25rem;
+}
+.lead {
+    font-size: 1.063rem;
+    font-weight: 400;
+    line-height: 1.313;
+}
+.entry-title em { /* adding some fancy titles */
+	font-style: italic;
+	font-weight: 300;
+} 
+ 
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.text-nowrap {
+  white-space: nowrap;
+}
+
+.text-lowercase {
+  text-transform: lowercase;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.text-capitalize {
+  text-transform: capitalize;
+}
+
+.text-muted {
+  color: #818a91;
+}
+
+abbr {
+	cursor: help;
+}
+mark {
+	padding: 1px 5px;
+	background-color: #F3F399;
+}
+
+code,
+kbd,
+pre,
+samp {
+  font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+code {
+  padding: 3px 5px;
+  font-size: 90%;
+  color: #bd4147;
+  background-color: #f7f7f9;
+  border-radius: 3px;
+}
+
+kbd {
+  padding: 2px 4px;
+  font-size: 90%;
+  color: #fff;
+  background-color: #333;
+  border-radius: 3px;
+}
+
+kbd kbd {
+  padding: 0;
+  font-size: 100%;
+  font-weight: bold;
+}
+
+pre {
+  display: block;
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  padding: 8px 12px;
+  font-size: 90%;
+  line-height: 1.5;
+  background-color: #e2eaea;
+  color: #373a3c;
+}
+
+pre code {
+  padding: 0;
+  font-size: inherit;
+  color: inherit;
+  background-color: transparent;
+  border-radius: 0;
+}
+
+   /* address */
+    address{
+    margin:0;
+    margin-top:20px;
+    }
+    address div {
+    display: block;
+    border-bottom:solid 1px #525252;
+    padding-bottom:5px;
+    margin-bottom:5px;
+    font-weight:300;
+    }
+   address div{
+        border-bottom:solid 1px #ddd;
+    }
+    address span {
+    display: block;
+    border-bottom:solid 1px #525252;
+    padding-bottom:5px;
+    margin-bottom:5px;
+    font-weight:300;
+    }
+    
+    .de_light .widget_text address div {
+    border-bottom:solid 1px #ddd;
+    }
+    
+    address div strong,
+	address span strong {
+        display: inline-block;
+        width: 60px;
+		color: #fff;
+    }
+	address a,
+	#bottom-wrapper .widget_text address a {
+		text-decoration: none;
+	}
+    address div,
+	address span{
+    border-bottom-color:#525252;
+    }
+    
+    address div i,
+	address span i{
+    margin-top:5px;
+    margin-right:20px;
+    float:none;
+    }
+   
+    address div strong,
+	address span strong {
+    display: inline-block;
+    }
+    
+   #bottom-wrapper .widget address div,
+   #bottom-wrapper .widget address span{
+    border-bottom:solid 1px #525252;
+    }
+ /* drop cap */
+ 
+.dropcap::first-letter{
+	font-family: georgia,serif;
+  float: left;
+    font-size: 4.5rem;
+    line-height: 0.5;
+    margin: 0.813rem 0.188rem 0 0;
+}
+
+a,
+a:visited {
+	text-decoration: none;
+	color: #79a2a1;
+}  
+a:hover {
+	color: #333;
+}
+
+/*-----------------------------------------
+Elements
+-----------------------------------------*/  
+blockquote {
+    font-size: 1.125rem;
+	font-style: italic;
+	color: #7fb3b1;
+}
+ blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
+} 
+blockquote:before {
+    content: "\201C";
+    float: left;
+    position: relative;
+    top: 4px;
+    margin-right: 8px;
+    font-size: 4rem;
+    line-height: .5;
+    color: #929292;
+}
+blockquote p {
+    overflow: hidden;
+}
+q {
+	font-style: italic;
+}
+q:before {
+    content: open-quote;
+}
+q:after {
+    content: close-quote;
+}
+ 
+
+hr {
+	background-color: #ccc;
+	border: 0;
+	height: 1px;
+	margin: 30px auto;
+}
+hr.double {
+    border: 1px double #ccc;
+    border-width: 1px 0;
+    height: 3px;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+ul, ol {
+	margin: 0 40px 20px;
+	padding: 0;
+}
+ul ul,
+ol ol {
+	margin: 0 30px;
+}
+#bottom-wrapper li {
+	border-color: #819695;
+}
+dl {
+    margin-bottom: 1rem;
+	line-height: 1;
+}
+dl dt {
+    margin-bottom: 0.3rem;
+	font-size: 1.063rem;
+    font-weight: bold;
+}
+dd {
+    margin: 0 0 12px;
+}
+
+ /*--------------------------------------------------------
+Table Styles
+--------------------------------------------------------*/
+
+table {
+	margin: 34px 0;
+	width: 100%;  
+	border-collapse: collapse;
+  border-spacing: 0; 
+}
+table thead, 
+table th {
+    text-align: left;
+}
+td,
+th {
+  padding: 0; 
+  }
+.table {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 1rem;
+}
+
+
+.table-striped,
+.table-striped-bordered,
+.table-bordered {
+    border-collapse: collapse;
+    border-spacing: 0;
+	border: 1px solid #e6e6e6;
+    text-align: left;
+}
+.table-striped {
+    border-collapse: collapse;
+    border-spacing: 0;
+	border: none;
+    text-align: left;
+}
+
+.table-striped thead th,
+.table-striped-bordered thead th {
+	color: #222;
+	background: #e6e6e6;
+}
+caption, th {
+    font-size: 0.813rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+th, td {
+    padding: 6px 12px;
+}
+.table-striped th, 
+.table-striped td,
+.table-striped-bordered th,
+.table-striped-bordered td {
+    padding: 7px 12px;
+}
+.table-striped tr:nth-child(odd),
+.table-striped-bordered tr:nth-child(odd) {
+    background-color: #efefef;
+}
+
+.table-striped-bordered thead th,
+.table-bordered thead th,
+.table-bordered th {
+    border-right: 1px solid #dcdcdc;
+}
+.table-striped-bordered thead th:last-child,
+.table-bordered thead th:last-child {
+    border-right: none;
+}
+.table-striped-bordered td,
+.table-bordered td {
+    border-left: 1px solid #dcdcdc;
+}
+.table-bordered th, 
+.table-bordered td {
+    border-bottom: 1px solid #e6e6e6;
+}
+.table-responsive {
+  min-height: .01%;
+  overflow-x: auto;
+}
+@media screen and (max-width: 767px) {
+  .table-responsive {
+    width: 100%;
+    margin-bottom: 15px;
+    overflow-y: hidden;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    border: 1px solid #ddd;
+  }
+  .table-responsive > .table {
+    margin-bottom: 0;
+  }
+  .table-responsive > .table > thead > tr > th,
+  .table-responsive > .table > tbody > tr > th,
+  .table-responsive > .table > tfoot > tr > th,
+  .table-responsive > .table > thead > tr > td,
+  .table-responsive > .table > tbody > tr > td,
+  .table-responsive > .table > tfoot > tr > td {
+    white-space: nowrap;
+  }
+}
+
+ /*--------------------------------------------------------------
+Alignments
+--------------------------------------------------------------*/
+
+.alignleft {
+    display: block;
+    float: none;
+    margin: 6px auto 20px;
+}
+
+.alignright {
+	display: block;
+	float: none;
+	margin: 6px auto 20px;
+}
+
+.aligncenter {
+	clear: both;
+	display: block;
+	margin: 6px auto 20px;
+}
+.alignnone {
+
+	display: inline-block;
+	margin: 6px 0 20px;
+} 
+
+.float-left {
+  float: left; }
+
+.float-right {
+  float: right; }
+
+.float-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto; 
+ }
+ 
+/* Responsive images and Media */
+img {
+  max-width: 100%;
+  height: auto;
+  -ms-interpolation-mode: bicubic;
+  display: inline-block;
+  vertical-align: middle; 
+  }
+
+#map_canvas img,
+#map_canvas embed,
+#map_canvas object,
+.map_canvas img,
+.map_canvas embed,
+.map_canvas object,
+.mqa-display img,
+.mqa-display embed,
+.mqa-display object {
+  max-width: none; 
+  }
+  
+/* banner caption */  
+.banner-caption {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    padding: 10px 20px;
+    text-align: center;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    color: #fff;
+	line-height: 1;
+}
+.banner-caption-content-title {
+    margin-bottom: 0;
+}
+#banner .banner-caption p {
+	margin: 10px 0;
+}
+.banner-caption-1 {
+	font-family: merriweather,serif;
+    font-size: 0.813rem;
+	font-weight: 400;
+	font-style: normal;
+}
+.banner-caption-2 {
+	display: none;
+}
+.banner-caption .button:hover {
+	background-color: #fff;
+	color: #000;
+	border-color: transparent;
+}
+.banner-caption .button {
+	padding: 1px 10px;
+    font-size: 12px;
+    margin: 5px auto 0;
+	background-color: transparent;
+    border: 1px solid #fff;
+}
+
+/* WP Gallery */
+.gallery figure {
+	margin: 0;
+}
+.gallery {
+    margin: 2.5rem -1.1666667%;
+}
+
+.gallery-item {
+	display: inline-block;
+	max-width: 33.33%;
+	padding: 0 1.1400652% 2.2801304%;
+	text-align: center;
+	vertical-align: top;
+	width: 100%;
+}
+
+.gallery-columns-1 .gallery-item {
+	max-width: 100%;
+}
+
+.gallery-columns-2 .gallery-item {
+	max-width: 50%;
+}
+
+.gallery-columns-4 .gallery-item {
+	max-width: 25%;
+}
+
+.gallery-columns-5 .gallery-item {
+	max-width: 20%;
+}
+
+.gallery-columns-6 .gallery-item {
+	max-width: 16.66%;
+}
+
+.gallery-columns-7 .gallery-item {
+	max-width: 14.28%;
+}
+
+.gallery-columns-8 .gallery-item {
+	max-width: 12.5%;
+}
+
+.gallery-columns-9 .gallery-item {
+	max-width: 11.11%;
+}
+
+.gallery-icon img {
+	margin: 0 auto;
+}
+
+.gallery-caption {
+	color: #686868;
+	display: block;
+	font-size: 13px;
+	font-size: 1rem;
+	font-style: italic;
+	line-height: 1.6153846154;
+	padding-top: 0.5384615385em;
+}
+
+.gallery-columns-6 .gallery-caption,
+.gallery-columns-7 .gallery-caption,
+.gallery-columns-8 .gallery-caption,
+.gallery-columns-9 .gallery-caption {
+	display: none;
+}
